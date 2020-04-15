@@ -115,3 +115,10 @@
 	color: white;
 	text-shadow: 0px 0px 15px black;
 }
+
+/* GRID */
+
+#grid:hover {
+	color: grey;
+	cursor: pointer;
+}

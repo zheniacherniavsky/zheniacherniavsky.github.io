@@ -1,4 +1,5 @@
 let color = "Black"
+let grid = true;
 
 $(document).ready(function() {
 
@@ -76,5 +77,18 @@ $(document).ready(function() {
 	$(".Yellow").click(function() {
 		color = "Yellow";
 		$(".brush").css('background-color', 'Yellow');
+	})
+
+	$("#grid").click(function() {
+		if(grid) {
+			grid = false
+			document.getElementById('grid').innerHTML = "Сетка ❌";
+			$("#paint td").css('border', 'none');
+		}
+		else {
+			grid = true;
+			document.getElementById('grid').innerHTML = "Сетка ✅";
+			$("#paint td").css('border', '1px solid rgb(0,0,0,0.1)');
+		}
 	})
 })
